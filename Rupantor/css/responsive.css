@@ -1,0 +1,175 @@
+/* Responsive Breakpoints */
+
+/* 4K / Large Desktop */
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+  
+  :root {
+    --card-w: 84px;
+    --card-h: 118px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile Landscape / Small Tablet */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .feature-card {
+    padding: 1rem;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 600px) {
+  :root {
+    --card-w: 58px;
+    --card-h: 82px;
+  }
+  
+  .navbar {
+    padding: 0 1rem;
+  }
+  
+  .brand-title {
+    font-size: 1.1rem;
+  }
+  
+  .logo-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+  :root {
+    --card-w: 48px;
+    --card-h: 68px;
+  }
+  
+  .navbar {
+    padding: 0 0.75rem;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 320px) {
+  :root {
+    --card-w: 42px;
+    --card-h: 60px;
+  }
+  
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Landscape Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  #header {
+    height: 50px;
+  }
+  
+  :root {
+    --header-h: 50px;
+  }
+  
+  main {
+    padding-top: 50px;
+  }
+  
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  :root {
+    --navy: #000000;
+    --ivory: #FFFFFF;
+    --amber: #FFC107;
+    --emerald: #00C853;
+  }
+  
+  button {
+    border: 2px solid var(--ivory);
+  }
+  
+  .glass-panel {
+    background: rgba(0,0,0,0.9);
+    border: 1px solid var(--ivory);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Print Styles */
+@media print {
+  #header,
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .glass-panel {
+    background: white;
+    border: 1px solid #ccc;
+  }
+}
