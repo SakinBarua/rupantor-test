@@ -1,0 +1,70 @@
+{
+  "rules": [
+    {
+      "id": 1,
+      "title": "Game Overview",
+      "title_bn": "খেলা পরিচিতি",
+      "content": "RUPANTOR is a transformation-based card game where players transform the current World State into a new state by playing cards whose category matches the World State's transformation paths."
+    },
+    {
+      "id": 2,
+      "title": "Objective",
+      "title_bn": "লক্ষ্য",
+      "content": "Be the first to reach 30 points OR complete your secret mission with the highest score when the deck runs out."
+    },
+    {
+      "id": 3,
+      "title": "Card Categories",
+      "title_bn": "কার্ড ক্যাটাগরি",
+      "content": "108 cards across 12 categories: Nature, Weather, Energy, Water, Earth, Plants, Animals, Objects, Reaction, Mission, World, and Special."
+    },
+    {
+      "id": 4,
+      "title": "Transform Paths",
+      "title_bn": "রূপান্তর পথ",
+      "content": "Each World State card has transform paths (tp). You can play a card if its category matches one of the World State's transform paths."
+    },
+    {
+      "id": 5,
+      "title": "Turn Structure",
+      "title_bn": "টার্ন কাঠামো",
+      "content": "1. Draw: Draw 1 card from deck. 2. Observe: Look at World State and hand. 3. Plan: Think about possible moves. 4. Transform: Play card(s) to transform World State. 5. Resolve: Wait for reactions. 6. End: Hand limit 5 (7 max after draw)."
+    },
+    {
+      "id": 6,
+      "title": "Chain Rules",
+      "title_bn": "চেইন নিয়ম",
+      "content": "Play multiple cards in one turn to form a chain. Each card must be playable on the previous card's transform paths. Max chain length: 5. Chain points: 1-card=1, 2-chain=1, 3-chain=3, 4-chain=6, 5-chain=10. Pure chain (all same category): 2x bonus."
+    },
+    {
+      "id": 7,
+      "title": "Hand Limit",
+      "title_bn": "হাত সীমা",
+      "content": "Maximum 7 cards in hand. If at 7, must play or pass. If hand is full and no playable card, player must pass."
+    },
+    {
+      "id": 8,
+      "title": "Reaction Cards",
+      "title_bn": "রিঅ্যাকশন কার্ড",
+      "content": "Reaction cards (isReact:true) cannot be played on your own turn. They are used to respond to opponent's actions."
+    },
+    {
+      "id": 9,
+      "title": "Scoring",
+      "title_bn": "স্কোরিং",
+      "content": "Single transform: 1 point. 2-chain: 1 point. 3-chain: 3 points. 4-chain: 6 points. 5-chain: 10 points. Pure chain: 2x multiplier. Mission completion: 10–20 points. Successful reaction: 1 point."
+    },
+    {
+      "id": 10,
+      "title": "Win Conditions",
+      "title_bn": "জয়ের শর্ত",
+      "content": "1. 30 points reached. 2. Mission complete + highest score. 3. Deck empty (both deck and history exhausted) — highest score wins."
+    },
+    {
+      "id": 11,
+      "title": "Deck Management",
+      "title_bn": "ডেক ব্যবস্থাপনা",
+      "content": "When deck is empty, shuffle the history pile (played cards) to form a new deck. Game ends when both deck and history are exhausted."
+    }
+  ]
+}
